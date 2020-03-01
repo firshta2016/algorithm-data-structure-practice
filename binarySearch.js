@@ -30,4 +30,8 @@ var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
 var result = binerySearch(primes, 71);
 console.log(result);
 
+<<<<<<< HEAD
 // Well I forgot to pull down changes from the remote before altering the branch code and it caused a merge conflict
+=======
+// Showing how making changes before pulling creates a merge conflice
+>>>>>>> 1d8279fd345b873c72a64fab7595f0c49f45a89c
