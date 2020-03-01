@@ -29,3 +29,5 @@ var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
 
 var result = binerySearch(primes, 71);
 console.log(result);
+
+// Showing how making changes before pulling creates a merge conflice
