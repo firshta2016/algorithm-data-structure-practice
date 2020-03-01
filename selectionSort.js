@@ -15,3 +15,5 @@ function selectionSort(arr) {
 }
 var arr = [3,2,10,1000, 900, 2, 1]
 console.log(selectionSort(arr));
+
+// Making a change
