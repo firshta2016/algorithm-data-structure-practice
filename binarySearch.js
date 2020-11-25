@@ -6,7 +6,7 @@
 // 6. Otherwise, the guess was too high. Set max = guess - 1.
 // 7. Go back to step 2.
 
-function binerySearch(arr, target) {
+function binarySearch(arr, target) {
     let left = 0
     let right = arr.length - 1
 
@@ -24,10 +24,11 @@ function binerySearch(arr, target) {
     return left
 }
 
+
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 
     41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
-var result = binerySearch(primes, 71);
+var result = binarySearch(primes, 5);
 console.log(result);
 
 // Well I forgot to pull down changes from the remote before altering the branch code and it caused a merge conflict

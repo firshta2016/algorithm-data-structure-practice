@@ -17,5 +17,21 @@ function merge (left, right) {
     return result.concat(left.length ? left : right)
 }
 
+function mergeSort(arr) {
+    if
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 var result = [3,2,10,1000, 900, 2, 1, 88, 4, 29]
 console.log(mergeSort(result));
