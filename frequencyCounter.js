@@ -20,7 +20,7 @@
      return true
  }
 
- let result = validAnagram('anagram', 'angaram');
+ let result = validAnagram('anagram', 'angarams');
  console.log(result);
 
  /**

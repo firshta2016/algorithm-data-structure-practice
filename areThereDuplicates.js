@@ -15,8 +15,9 @@
     }
     return false
  }
-const result = areThereDuplicates(1,2,3);
-console.log(result);
+
+const result = areThereDuplicates('a','a','b','c','a');  
+//console.log(result);
 
  /**
   * (1,2,3) //false
