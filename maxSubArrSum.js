@@ -1,5 +1,5 @@
 /** write a function which accepts an array of integets and a number. 
- * the function should calculate the maximum sum of of 
+ * the function should calculate the maximum sum of 
  * number consecutive elements in the array
  */
 

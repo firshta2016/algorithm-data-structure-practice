@@ -1,3 +1,8 @@
+/**
+ * write a function which takes two strings and checks whether the charac. in the first string form a 
+ * subsequence of the char. in the second string. In order words, the function should check whether the 
+ * char. in the first string appear somewhere in the second string.
+ */
 function isSubsequence(str1, str2) {
     let i = 0;
     let j = 0;

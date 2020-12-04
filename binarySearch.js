@@ -1,34 +1,29 @@
-// 1. Let min = 0 and max = n-1.
-// 2. If max < min, then stop: target is not present in array. Return -1.
-// 3. Compute guess as the average of max and min, rounded down (so that it is an integer).
-// 4. If array[guess] equals target, then stop. You found it! Return guess.
-// 5. If the guess was too low, that is, array[guess] < target, then set min = guess + 1.
-// 6. Otherwise, the guess was too high. Set max = guess - 1.
-// 7. Go back to step 2.
+/** 
+ * write a function that accepts a sorted array and a value
+ * create a left pointer at the start of the array and a right pointer at the end of the array
+ * while the left pointer comes before the right pointer
+ * create a pointer in the middle
+ * if you find the value you want, return the index
+ * if the value is too small, more the left pointer up
+ * if the value is too large, move the right pointer down
+ * if you never find the value, return -1
+*/
 
-function binarySearch(arr, target) {
-    let left = 0
-    let right = arr.length - 1
-
-    while(left < right) {
-        let mid = Math.floor(left + (right - left) /2 )
-        if(arr[mid] === target) {
-            return mid
-        } else if(arr[mid] < target) {
+function binarySearch(arr, value) {
+    let left = 0;
+    let right = arr.length - 1;
+    while (left <= right) {
+        let middle = Math.floor(left + right / 2)
+        if(arr[middle] === value) {
+            return middle;
+        } else if (arr[middle] < value) {
             left = mid + 1
         } else {
             right = mid - 1
         }
-        
     }
-    return left
+    return -1
 }
 
-
-var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 
-    41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
-
-var result = binarySearch(primes, 5);
+let result = binarySearch([1,2,3,4,5,6,7,8,9,10,11,12],6);
 console.log(result);
-
-// Well I forgot to pull down changes from the remote before altering the branch code and it caused a merge conflict
